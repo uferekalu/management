@@ -8,10 +8,10 @@ interface ApiErrorResponse {
 }
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: 'https://quicksearchserver-8ee1999baeab.herokuapp.com/api',
   headers: {
     'Content-Type': 'application/json',
-    Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwic2Vzc2lvbklkIjoyNTIsImlhdCI6MTc0MDI5NjM5NywiZXhwIjoxNzQwMzgyNzk3fQ.eu1cFGvjzkcoAEvvnGr7xkSSFmDaxLD0wllP59dGe0g`,
+    Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Nywic2Vzc2lvbklkIjoxOTEsImlhdCI6MTc0MDI5ODk0MSwiZXhwIjoxNzQwMzg1MzQxfQ.a_jYqM7q-8XuAzy-Gs-nL6CPjaPwQeIqg0jPkYBJ9Ds`,
   },
 });
 

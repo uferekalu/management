@@ -12,7 +12,7 @@ export default function UserDetails() {
 
   const totalStoredGptResults =
     user.storedGpt?.reduce((sum, gpt) => {
-      return sum + (Array.isArray(gpt.result) ? gpt.result.length : 0);
+      return sum + (Array.isArray(gpt.result) ? gpt.result?.length : 0);
     }, 0) || 0;
 
   const data = {
@@ -76,7 +76,7 @@ export default function UserDetails() {
             <li>
               Stored Gpt:{' '}
               {user.storedGpt?.reduce(
-                (sum, gpt) => sum + (gpt.result.length || 0),
+                (sum, gpt) => sum + (gpt.result?.length || 0),
                 0
               ) || 0}
             </li>
